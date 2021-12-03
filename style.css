@@ -1,0 +1,165 @@
+/* ------- Start Global ------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Alegreya Sans,sans-serif,monospace;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(228, 228, 228);
+}
+div{
+    background-color: #7FDBFF;
+    padding: 40px;
+}
+p{
+    color: #001f3f;
+}
+h1{
+    background-color: #001f3f;
+    color: white;
+    padding: 30px;
+}
+h2{
+    background-color: #0074D9;
+    padding: 30px;
+}
+h1,h2{
+    color: white;
+    text-align: center;
+}
+.background-V{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-bottom: 3px dashed #FF4136;
+    background-color: transparent;
+}
+.background-H{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-right: 3px dashed #FF4136;
+    background-color: transparent;
+}
+/* ------- End Global ------- */
+/* ------- Start Horizontally ------- */
+.H-A{
+    text-align: center;
+}
+.H-B-Child{
+    background-color: #39CCCC;
+    border: 3px solid #0074D9;
+    width: fit-content;
+    margin: 0 auto;
+}
+.H-C{
+    display: flex;
+    justify-content: center;
+}
+.H-C-Child{
+    background-color: #39CCCC;
+    border: 3px solid #0074D9;
+    width: fit-content;
+    margin: 0 auto;
+}
+/* ------- End Horizontally ------- */
+/* ------- Start Vertically ------- */
+.V-A{
+    position: relative;
+    height: 300px;
+}
+
+.V-A-Child{
+    background-color: #39CCCC;
+    border: 3px solid #0074D9;
+    max-width: 800px;
+    height: 100px;
+    padding: 10px;
+    position: absolute; 
+    top: 50%; 
+    margin-top: -50px;
+    z-index: 999;
+    
+}
+.V-B{
+    position: relative;
+    height: 300px;
+}
+.V-B-Child{
+    background-color: #39CCCC;
+    border: 3px solid #0074D9;
+    max-width: 800px;
+    min-height: 100px;
+    padding: 10px;
+    position: absolute; 
+    top: 50%; 
+    transform: translate(0, -50%);
+    z-index: 999;
+}
+.V-C{
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.V-C-Child{
+    background-color: #39CCCC;
+    border: 3px solid #0074D9;
+    padding: 10px;
+    z-index: 999;
+}
+/* ------- End Vertically ------- */
+/* ------- Start  Both Horizontally & Vertically ------- */
+.H-V-A{
+    position: relative;
+    height: 300px;
+
+}
+.H-V-A-Child{
+    background-color: #39CCCC;
+    border: 3px solid #0074D9;
+    width: 800px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -400px;
+    z-index: 9999;
+}
+.H-V-B{
+    position: relative;
+    height: 300px;
+
+}
+.H-V-B-Child{
+    background-color: #39CCCC;
+    border: 3px solid #0074D9;
+    max-width: 800px;
+    min-height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+.H-V-C{
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.H-V-C-Child{
+    background-color: #39CCCC;
+    border: 3px solid #0074D9;
+    z-index: 999;
+}
+/* ------- End  Both Horizontally & Vertically ------- */

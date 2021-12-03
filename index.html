@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering in CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Centering in CSS</h1>
+    <br>
+    <br>
+    <h2>1- Horizontally</h2>
+    <br>
+    <div class="H-A">
+        <p>A) To Center Text or Links :
+            .center {
+            text-align: center;
+            }</p>
+    </div>
+    <br>
+    <div class="H-B">
+        <div class="H-B-Child">
+            <p>B) To Center Block-Level Elements Like a div :
+                .center {
+                margin: 0 auto;
+                }</p>
+        </div>
+    </div>
+    <br>
+    <div class="H-C">
+        <div class="H-C-Child">
+            <p>C) To Center a Div Horizontally with Flexbox :
+                .parent {
+                display: flex;
+                justify-content: center;
+                }</p>
+        </div>
+    </div>
+    <br>
+    <h2>2- Vertically</h2>
+    <br>
+    <div class="V-A">
+        <div class="background-V"></div>
+        <div class="V-A-Child">
+            <p>A) To Center a Div Vertically with CSS Absolute Positioning and Negative Margins :
+                .parent {
+                position: relative;
+                }
+                .child {
+                position: absolute;
+                top: 50%;
+                margin-top: -25px;/* Half this element's height */
+                }</p>
+        </div>
+    </div><br>
+    <div class="V-B">
+        <div class="background-V"></div>
+        <div class="V-B-Child">
+            <p>B) To Center a Div Vertically with CSS Absolute Positioning and Transform :
+                .parent {
+                position: relative;
+                }
+                .child {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                }</p>
+        </div>
+    </div>
+    <br>
+    <div class="V-C">
+        <div class="background-V"></div>
+        <div class="V-C-Child">
+            <p>C) To Center a Div Vertically with Flexbox :
+                .parent {
+                display: flex;
+                align-items: center;
+                }
+            </p>
+        </div>
+    </div>
+    <br>
+    <h2>3- Both Horizontally & Vertically</h2>
+    <br>
+    <div class="H-V-A">
+        <div class="background-V"></div>
+        <div class="background-H"></div>
+        <div class="H-V-A-Child">
+            <p>A) To Center a Div Vertically and Horizontally with CSS Absolute Positioning and Negative Margins :
+                .parent {
+                position: relative;
+                }
+                .child {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -25px 0 0 -25px;
+                }</p>
+        </div>
+    </div>
+    <br>
+    <div class="H-V-B">
+        <div class="background-V"></div>
+        <div class="background-H"></div>
+        <div class="H-V-B-Child">
+            <p>B) To Center a Div Vertically and Horizontally with CSS Absolute Positioning and Transform :
+                .parent {
+                position: relative;
+                }
+                .child {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }</p>
+        </div>
+    </div>
+    <br>
+    <div class="H-V-C">
+        <div class="background-V"></div>
+        <div class="background-H"></div>
+        <div class="H-V-C-Child">
+            <p>C) To Center a Div Vertically and Horizontally with Flexbox :
+                .parent {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }</p>
+        </div>
+    </div>
+    <br>
+
+
+
+
+</body>
+
+</html>
